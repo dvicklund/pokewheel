@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>D3 BS</title>
+    <script src="d3.min.js"></script>
+    <script src="script.js" async></script>
+    <style>
+      .arc text {
+        font: 10px sans-serif;
+        text-anchor: middle;
+      }
+
+      .arc path {
+        stroke: #fff;
+      }
+
+      .arc:hover {
+        opacity: 0.7;
+      }
+
+      div.tip {
+        position: absolute;
+        text-align: center;
+        width: 60px;
+        height: 30px;
+        padding: 4px;
+        font: 12px sans-serif;
+        background: lightsteelblue;
+        border: 0px;
+        border-radius: 10px;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart"></div>
+  </body>
+</html>
