@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>D3 BS</title>
     <script src="d3.min.js"></script>
-    <script src="script.js" async></script>
     <style>
       .arc text {
         font: 10px sans-serif;
@@ -17,6 +16,29 @@
 
       .arc:hover {
         opacity: 0.7;
+      }
+
+      .bar {
+        fill: steelblue;
+      }
+
+      .bar:hover {
+        fill: brown;
+      }
+
+      .axis {
+        font: 8px sans-serif;
+      }
+
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+
+      .x.axis path {
+        display: none;
       }
 
       div.tip {
@@ -35,5 +57,6 @@
   </head>
   <body>
     <div id="chart"></div>
+    <script src="script.js" async></script>
   </body>
 </html>
